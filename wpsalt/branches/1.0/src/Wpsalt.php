@@ -12,6 +12,7 @@ use RandomLib\Factory;
  * @package tiFy\Components\Wpsalt
  * @version 1.0.0
  *
+ * Fork du dépot original de Rob Waller
  * @see https://github.com/RobDWaller/wordpress-salts-generator
  */
 class Wpsalt

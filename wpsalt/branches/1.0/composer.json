@@ -30,6 +30,6 @@
     "sort-packages": true
   },
   "bin": [
-    "src/Resources/bin/wpsalt"
+    "bin/wpsalt"
   ]
 }

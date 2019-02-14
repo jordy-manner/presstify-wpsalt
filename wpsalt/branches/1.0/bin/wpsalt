@@ -1,9 +1,23 @@
 #!/usr/bin/env php
 <?php
 
-require_once __DIR__ . '/../../../autoload.php';
+$paths = [
+    __DIR__.'/../autoload.php',
+    __DIR__.'/../../../autoload.php'
+];
+
+foreach ($paths as $path) :
+    if (file_exists($path)) :
+        require_once $path;
+        break;
+    endif;
+endforeach;
 
 use tiFy\Components\Wpsalt\Wpsalt;
+
+/** Deboggage. */
+error_reporting(E_ALL);
+ini_set('display_errors', 0);
 
 echo PHP_EOL . (new Wpsalt())->dotEnv();
 die();

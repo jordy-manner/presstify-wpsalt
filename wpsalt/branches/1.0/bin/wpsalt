@@ -13,5 +13,5 @@ foreach ($paths as $path) {
     }
 }
 
-echo PHP_EOL . (new \tiFy\Components\Wpsalt\Wpsalt())->dotEnv();
+echo (new \tiFy\Components\Wpsalt\Wpsalt())->dotEnv();
 die();

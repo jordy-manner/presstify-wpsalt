@@ -50,7 +50,7 @@ class Wpsalt
         $salts = $this->wordPressSalts();
 
         return array_reduce(array_keys($salts), function ($saltsString, $key) use ($salts) {
-            $saltsString .= "define('$key', '$salts[$key]');" . PHP_EOL;
+            $saltsString .= PHP_EOL . "define('$key', '$salts[$key]');";
             return $saltsString;
         }, '');
     }
@@ -66,7 +66,7 @@ class Wpsalt
         $salts = $this->wordPressSalts();
 
         return array_reduce(array_keys($salts), function ($saltsString, $key) use ($salts) {
-            $saltsString .= "$key=$salts[$key]" . PHP_EOL;
+            $saltsString .= PHP_EOL . "$key=$salts[$key]";
             return $saltsString;
         }, '');
     }

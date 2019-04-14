@@ -33,7 +33,6 @@ class Generator
      */
     public function salt(): string
     {
-        return $this->factory->getMediumStrengthGenerator()
-            ->generateString(64, $this->chars);
+        return $this->factory->getMediumStrengthGenerator()->generateString(64, $this->chars);
     }
 }

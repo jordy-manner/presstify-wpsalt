@@ -1,0 +1,17 @@
+#!/usr/bin/env php
+<?php
+
+$paths = [
+    __DIR__.'/../autoload.php',
+    __DIR__.'/../../../autoload.php'
+];
+
+foreach ($paths as $path) {
+    if (file_exists($path)) {
+        require_once $path;
+        break;
+    }
+}
+
+echo PHP_EOL . (new \tiFy\Components\Wpsalt\Wpsalt())->dotEnv();
+die();

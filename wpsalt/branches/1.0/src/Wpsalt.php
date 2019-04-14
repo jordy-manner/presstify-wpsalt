@@ -10,7 +10,7 @@ use RandomLib\Factory;
  * @desc Extension PresstiFy de gestion l'interface d'administration de Wordpress.
  * @author Jordy Manner <jordy@milkcreation.fr>
  * @package tiFy\Components\Wpsalt
- * @version 1.0.0
+ * @version 1.0.1
  *
  * Fork du dépot original de Rob Waller
  * @see https://github.com/RobDWaller/wordpress-salts-generator
@@ -51,7 +51,6 @@ class Wpsalt
 
         return array_reduce(array_keys($salts), function ($saltsString, $key) use ($salts) {
             $saltsString .= "define('$key', '$salts[$key]');" . PHP_EOL;
-
             return $saltsString;
         }, '');
     }
@@ -67,8 +66,7 @@ class Wpsalt
         $salts = $this->wordPressSalts();
 
         return array_reduce(array_keys($salts), function ($saltsString, $key) use ($salts) {
-            $saltsString .= "$key = '$salts[$key]'" . PHP_EOL;
-
+            $saltsString .= "$key=$salts[$key]" . PHP_EOL;
             return $saltsString;
         }, '');
     }

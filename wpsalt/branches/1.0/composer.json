@@ -3,7 +3,7 @@
   "description": "Générateur de clé de salage Wordpress",
   "type": "presstify-component",
   "homepage": "https://svn.tigreblanc.fr/presstify-components/wpsalt",
-  "time": "2020-02-08",
+  "time": "2020-05-13",
   "license": "proprietary",
   "authors": [
     {
@@ -24,7 +24,7 @@
   },
   "autoload": {
     "psr-4": {
-      "tiFy\\Components\\Wpsalt\\": ""
+      "tiFy\\Components\\Wpsalt\\": "src"
     }
   },
   "minimum-stability": "dev",

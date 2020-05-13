@@ -10,7 +10,7 @@ use RandomLib\Factory;
  * @desc Extension PresstiFy de gestion l'interface d'administration de Wordpress.
  * @author Jordy Manner <jordy@milkcreation.fr>
  * @package tiFy\Components\Wpsalt
- * @version 1.0.3
+ * @version 1.0.6
  *
  * Fork du dépot original de Rob Waller
  * @see https://github.com/RobDWaller/wordpress-salts-generator

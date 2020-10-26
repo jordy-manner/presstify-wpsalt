@@ -1,8 +1,6 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace tiFy\Components\Wpsalt;
-
-use RandomLib\Factory;
 
 /**
  * Class Wpsalt
@@ -10,7 +8,7 @@ use RandomLib\Factory;
  * @desc Extension PresstiFy de gestion l'interface d'administration de Wordpress.
  * @author Jordy Manner <jordy@milkcreation.fr>
  * @package tiFy\Components\Wpsalt
- * @version 1.0.6
+ * @version 1.0.7
  *
  * Fork du dépot original de Rob Waller
  * @see https://github.com/RobDWaller/wordpress-salts-generator
@@ -24,7 +22,7 @@ class Wpsalt
      */
     public function wordPressSalts(): array
     {
-        $generator = new Generator(new Factory());
+        $generator = new Generator();
 
         $salts['AUTH_KEY'] = $generator->salt();
         $salts['SECURE_AUTH_KEY'] = $generator->salt();

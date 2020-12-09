@@ -1,0 +1,40 @@
+{
+  "name": "presstify-components/wpsalt",
+  "description": "Générateur de clé de salage Wordpress",
+  "type": "presstify-component",
+  "homepage": "https://svn.tigreblanc.fr/presstify-components/wpsalt/",
+  "time": "2020-10-26",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Jordy Manner",
+      "email": "jordy.manner@milkcreation.fr",
+      "role": "Developper"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://composer.tigreblanc.fr/presstify/"
+    }
+  ],
+  "require": {
+    "php": "^5.6 || ^7.0",
+    "laminas/laminas-math": "^3.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "tiFy\\Components\\Wpsalt\\": "src"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true
+  },
+  "bin": [
+    "bin/wpsalt"
+  ]
+}

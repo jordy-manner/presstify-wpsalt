@@ -2,20 +2,14 @@
   "name": "presstify-components/wpsalt",
   "description": "Générateur de clé de salage Wordpress",
   "type": "presstify-component",
-  "homepage": "https://svn.tigreblanc.fr/presstify-components/wpsalt/",
-  "time": "2020-10-26",
+  "homepage": "https://github.com/jordy-manner/presstify-wpsalt.git",
+  "time": "2021-09-13",
   "license": "proprietary",
   "authors": [
     {
       "name": "Jordy Manner",
       "email": "jordy.manner@milkcreation.fr",
       "role": "Developper"
-    }
-  ],
-  "repositories": [
-    {
-      "type": "composer",
-      "url": "https://composer.tigreblanc.fr/presstify/"
     }
   ],
   "require": {
